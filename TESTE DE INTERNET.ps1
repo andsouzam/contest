@@ -4,7 +4,7 @@
 
 
     if (Test-Connection amazon.com -ErrorAction SilentlyContinue ){ 
-        write-host "TÁ FUNFANDO -- $a"  -ForegroundColor white -BackgroundColor Green
+        write-host "TÁ FUNFANDO -- $a"  -ForegroundColor Black -BackgroundColor Green
         start-sleep -Seconds 10
         testederede}
 
