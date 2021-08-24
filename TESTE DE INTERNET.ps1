@@ -20,7 +20,7 @@ function testederede2 {
         testederede}
 
     else {
-        Write-Host "CAIIUUU tentando resolver... -- $a" -ForegroundColor Black -BackgroundColor Red
+        Write-Host "CAIIUUU -- $a" -ForegroundColor Black -BackgroundColor Red
         #comando cmd para resolver o problema
         Start-Sleep -Seconds 10
         testederede3}
