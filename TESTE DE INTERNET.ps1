@@ -14,7 +14,7 @@
 }
 
 function testederede2 {
-    if (Test-Connection amazon.com -ErrorAction SilentlyContinue ){ 
+    if (Test-Connection globo.com -ErrorAction SilentlyContinue ){ 
         write-host "TÁ FUNFANDO -- $a"  -ForegroundColor white -BackgroundColor Green
         start-sleep -Seconds 20
         testederede}
@@ -27,7 +27,7 @@ else {
 }
 
 function testederede3 {
-if (Test-Connection amazon.com -ErrorAction SilentlyContinue ){ 
+if (Test-Connection globo.com -ErrorAction SilentlyContinue ){ 
 write-host "TÁ FUNFANDO -- $a"  -ForegroundColor white -BackgroundColor Green
 start-sleep -Seconds 20
 testederede}
