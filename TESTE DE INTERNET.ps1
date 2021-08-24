@@ -13,45 +13,39 @@
           testederede2}
 }
 
-
-
 function testederede2 {
+    if (Test-Connection globo.com -ErrorAction SilentlyContinue ){ 
+        write-host "TÁ FUNFANDO -- $a"  -ForegroundColor white -BackgroundColor Green
+        start-sleep -Seconds 10
+        testederede}
+
+    else {
+        Write-Host "CAIIUUU tentando resolver... -- $a" -ForegroundColor Black -BackgroundColor Red
+        #comando cmd para resolver o problema
+        Start-Sleep -Seconds 10
+        testederede3}
+}
+
+function testederede3 {
+    if (Test-Connection globo.com -ErrorAction SilentlyContinue ){ 
+        write-host "TÁ FUNFANDO -- $a"  -ForegroundColor white -BackgroundColor Green
+        start-sleep -Seconds 10
+        testederede}
+
+    else { Write-Host "CAIIUUU -- $a" -ForegroundColor Black -BackgroundColor Red
+        start-sleep -Seconds 10
+        testederede4}
+}
+
+function testederede4 {
     if (Test-Connection amazon.com -ErrorAction SilentlyContinue ){ 
         write-host "TÁ FUNFANDO -- $a"  -ForegroundColor white -BackgroundColor Green
         start-sleep -Seconds 10
         testederede}
 
-else {
-    Write-Host "CAIIUUU tentando resolver... -- $a" -ForegroundColor Black -BackgroundColor Red
-    #comando cmd para resolver o problema
-    Start-Sleep -Seconds 10
-    testederede3}
-}
-
-
-
-function testederede3 {
-if (Test-Connection amazon.com -ErrorAction SilentlyContinue ){ 
-write-host "TÁ FUNFANDO -- $a"  -ForegroundColor white -BackgroundColor Green
-start-sleep -Seconds 10
-testederede}
-
-else { Write-Host "CAIIUUU -- $a" -ForegroundColor Black -BackgroundColor Red
-start-sleep -Seconds 10
-testederede4}
-}
-
-
-
-function testederede4 {
-if (Test-Connection amazon.com -ErrorAction SilentlyContinue ){ 
-write-host "TÁ FUNFANDO -- $a"  -ForegroundColor white -BackgroundColor Green
-start-sleep -Seconds 10
-testederede}
-
-else { Write-Host "CAIIUUU nao conseguimos resolver-- $a" -ForegroundColor Black -BackgroundColor Red
-start-sleep -Seconds 10
-testederede3}
+    else { Write-Host "CAIIUUU nao conseguimos resolver-- $a" -ForegroundColor Black -BackgroundColor Red
+        start-sleep -Seconds 10
+        testederede3}
 }
 
 
