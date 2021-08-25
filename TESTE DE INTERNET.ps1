@@ -16,10 +16,7 @@
 function testederede2 {
     $b= (Get-Date).ToString('dddd, dd "de" MMMM "de" yyyy "as" HH:mm:ss tt')
     if (Test-Connection globo.com -ErrorAction SilentlyContinue ){ 
-        $r=write-host "TÁ FUNFANDO -- $b"  -ForegroundColor Black -BackgroundColor Green
-        $r
-        $l=Get-Location
-        Out-File -filepath $env:PWD/contest/files/logcontest.txt -Append -InputObject "teste"
+        write-host "TÁ FUNFANDO -- $b"  -ForegroundColor Black -BackgroundColor Green
         start-sleep -Seconds 10
         testederede}
 
