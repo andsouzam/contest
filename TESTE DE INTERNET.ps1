@@ -16,7 +16,7 @@
 function testederede2 {
     $b= (Get-Date).ToString('dddd, dd "de" MMMM "de" yyyy "as" HH:mm:ss tt')
     if (Test-Connection globo.com -ErrorAction SilentlyContinue ){ 
-        write-host "TÁ FUNFANDO -- $b"  -ForegroundColor white -BackgroundColor Green
+        write-host "TÁ FUNFANDO -- $b"  -ForegroundColor Black -BackgroundColor Green
         start-sleep -Seconds 10
         testederede}
 
@@ -30,7 +30,7 @@ function testederede2 {
 function testederede3 {
     $c= (Get-Date).ToString('dddd, dd "de" MMMM "de" yyyy "as" HH:mm:ss tt')
     if (Test-Connection globo.com -ErrorAction SilentlyContinue ){ 
-        write-host "TÁ FUNFANDO -- $c"  -ForegroundColor white -BackgroundColor Green
+        write-host "TÁ FUNFANDO -- $c"  -ForegroundColor Black -BackgroundColor Green
         start-sleep -Seconds 10
         testederede}
 
@@ -42,7 +42,7 @@ function testederede3 {
 function testederede4 {
     $d= (Get-Date).ToString('dddd, dd "de" MMMM "de" yyyy "as" HH:mm:ss tt')
     if (Test-Connection amazon.com -ErrorAction SilentlyContinue ){ 
-        write-host "TÁ FUNFANDO -- $d"  -ForegroundColor white -BackgroundColor Green
+        write-host "TÁ FUNFANDO -- $d"  -ForegroundColor Black -BackgroundColor Green
         start-sleep -Seconds 10
         testederede}
 
@@ -50,7 +50,5 @@ function testederede4 {
         start-sleep -Seconds 10
         testederede3}
 }
-
-
 
 testederede
