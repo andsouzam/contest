@@ -23,6 +23,14 @@ function testederede2 {
     else {
         Write-Host "CAIIUUU -- $b" -ForegroundColor Black -BackgroundColor Red
         #comando cmd para resolver o problema
+        
+        
+        $command = “cmd.exe /c 'ipconfig /release'" 
+        $process = [WMICLASS]“$cmp_atu\ROOT\CIMV2:win32_process“
+        $process.Create($command)
+
+
+        #----
         Start-Sleep -Seconds 10
         testederede3}
 }
